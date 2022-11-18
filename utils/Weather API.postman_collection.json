@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "97b44a27-1f97-429e-8fdc-673a5b2d6e95",
+		"name": "Weather API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12584453"
+	},
+	"item": [
+		{
+			"name": "Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/city/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"city",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/city/weather?cityId=1&date=2022-11-15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"city",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "cityId",
+							"value": "1"
+						},
+						{
+							"key": "date",
+							"value": "2022-11-15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Avg Temperature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/city/weather/avg-temperature?cityId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"city",
+						"weather",
+						"avg-temperature"
+					],
+					"query": [
+						{
+							"key": "cityId",
+							"value": "1"
+						},
+						{
+							"key": "date",
+							"value": "2022-11-15",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Most viewed city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/city/popular",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"city",
+						"popular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Meteo API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.open-meteo.com/v1/forecast?latitude=47.01&longitude=32.10&hourly=apparent_temperature,rain,snowfall,visibility&current_weather=true&past_days=7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"open-meteo",
+						"com"
+					],
+					"path": [
+						"v1",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "47.01"
+						},
+						{
+							"key": "longitude",
+							"value": "32.10"
+						},
+						{
+							"key": "hourly",
+							"value": "apparent_temperature,rain,snowfall,visibility"
+						},
+						{
+							"key": "current_weather",
+							"value": "true"
+						},
+						{
+							"key": "past_days",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
