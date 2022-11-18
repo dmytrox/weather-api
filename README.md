@@ -5,7 +5,8 @@
 Used stack:
 
 - Express.js - Node.js RESTAPI platform
-- Sequelize - DB ORM
+- MySQL - Database 
+- Sequelize - MySQL db ORM
 
 Used open source API/Data:
 - [Open Meteo](https://open-meteo.com/en/docs#latitude=47.01&longitude=32.10&hourly=temperature_2m) - Weather API
